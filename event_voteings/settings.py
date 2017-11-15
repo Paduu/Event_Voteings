@@ -25,7 +25,7 @@ SECRET_KEY = ')+6tmp9f#8ft0)&w4tosaa_kjspxpte)q)($6l8qaznl+n81xd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['polygon.pythonanywhere.com']
 
 
 # Application definition
