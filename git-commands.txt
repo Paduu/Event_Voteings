@@ -1,4 +1,5 @@
 git checkout master
 git pull               
+git commit -a -m ""
 git merge develop      
 git push origin master 
