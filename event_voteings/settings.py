@@ -152,3 +152,5 @@ CORS_ORIGIN_WHITELIST = [
 CORS_ORIGIN_REGEX_WHITELIST = [
             'polygon.pythonanywhere.com:80',
             ]
+
+ACCOUNT_EMAIL_VERIFICATION="none"
