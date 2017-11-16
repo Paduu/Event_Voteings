@@ -26,7 +26,7 @@ SECRET_KEY = ')+6tmp9f#8ft0)&w4tosaa_kjspxpte)q)($6l8qaznl+n81xd'
 DEBUG = False 
 
 ALLOWED_HOSTS = ['polygon.pythonanywhere.com']
-
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
