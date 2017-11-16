@@ -41,6 +41,11 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'voteings',
     'corsheaders',
+    'rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
 ]
 
 
