@@ -8,7 +8,7 @@ router.register(r'events', views.EventViewSet)
 router.register(r'games', views.GameViewSet)
 router.register(r'voteings', views.VoteingViewSet)
 router.register(r'users', views.UserViewSet)
-router.register(r'whoami', views.UserMeViewSet)
+#router.register(r'whoami', views.UserMeViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
