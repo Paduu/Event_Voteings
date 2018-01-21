@@ -37,17 +37,17 @@ class UserViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-class UserMeViewSet(viewsets.ReadOnlyModelViewSet):
-    """
-    API endpoint that allows groups to be viewed or edited.
-    """
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-    def get_object(self):
-        return self.request.user
-
-    def list(self, request, *args, **kwargs):
-        return self.retrieve(request, *args, **kwargs)
+#class UserMeViewSet(viewsets.ReadOnlyModelViewSet):
+#    """
+#    API endpoint that allows groups to be viewed or edited.
+#    """
+#    queryset = User.objects.all()
+#    serializer_class = UserSerializer
+#
+#    def get_object(self):
+#        return self.request.user
+#
+#    def list(self, request, *args, **kwargs):
+#        return self.retrieve(request, *args, **kwargs)
 
 
