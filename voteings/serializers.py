@@ -10,14 +10,14 @@ class EventSerializer(serializers.ModelSerializer):
 class GameSerializer(serializers.ModelSerializer):
     class Meta:
         model = Game
-        fields = ('id', 'title', 'description', 'createdDate', 'modifiedDate')
+        fields = ('id', 'title', 'description', 'event', 'createdDate', 'modifiedDate')
 
 class VoteingSerializer(serializers.ModelSerializer):
     creator = serializers.ReadOnlyField(source='creator.username')
 
     class Meta:
         model = Voteing
-        fields = ('id', 'event', 'game', 'createdDate', 'modifiedDate', 'creator')
+        fields = ('id', 'game', 'createdDate', 'modifiedDate', 'creator')
 
 class UserSerializer(serializers.ModelSerializer):
     voteings = serializers.PrimaryKeyRelatedField(many=True, queryset=Voteing.objects.all(), required=False)

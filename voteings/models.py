@@ -20,11 +20,11 @@ class Event(models.Model):
 class Game(models.Model):
     title = models.CharField(max_length=40)
     description = models.TextField(blank=True, default='')
+    event = models.ForeignKey('Event', on_delete=models.CASCADE)
     createdDate = models.DateTimeField(auto_now_add=True)
     modifiedDate = models.DateTimeField(auto_now=True)
 
 class Voteing(models.Model):
-    event = models.ForeignKey('Event', on_delete=models.CASCADE)
     game = models.ForeignKey('Game', on_delete=models.CASCADE)
     creator = models.ForeignKey('auth.User', related_name='voteings', on_delete=models.CASCADE)
     createdDate = models.DateTimeField(auto_now_add=True)
